@@ -33,9 +33,74 @@ public class ArrayDS {
         }
         System.out.println(Arrays.toString(arr));
 
+        // Descending order 
+        int[] array = {4,-1,5,3,1,2,4};
+        int temp;
+
+        for(int i=0;i<array.length;i++){
+            for(int j=0;j<array.length;j++){
+                if(array[j] < array[i]){
+                    temp = array[j]; 
+                    array[j] = array[i]; 
+                    array[i] = temp; 
+                }
+
+            }
+        }
+        System.out.println("Descending order :"+Arrays.toString(array));
 
 
+        // Ascending order
+        for(int i=0;i<array.length;i++){
+            for(int j=0;j<array.length;j++){
+                if(array[j] > array[i]){
+                    temp = array[j];
+                    array[j] = array[i];
+                    array[i] = temp;
+                }
+                
+            }
+            
+        }
+
+        System.out.println("Ascending order :"+Arrays.toString(array));
+        
+        double[][] multi = new double[3][2];
+        multi[0][0]=0;
+        multi[0][1]=0.1;
+        multi[1][0]=1;
+        multi[1][1]=1.1;
+        multi[2][0]=2;
+        multi[2][1]=2.1;
+
+        System.out.println(Arrays.deepToString(multi));
+
+        // Minimum number in an array
+        int[] array2 = {9,6,1,4,7,5,23,456,4,6,8,4,2};
+        int temp2 = Integer.MAX_VALUE;
+        for(int i : array2){
+            if(i < temp2){
+                temp2 = i;
+            }
+        }
+        System.out.println("Minimum number : "+temp2);
+
+        // Maximum number in an array
+        int temp3 = Integer.MIN_VALUE;
+        for(int i : array2){
+            if(i > temp3){
+                temp3 = i;
+            }
+        }
+        System.out.println("Maximum number : "+temp3);
 
 
-
+        
+    
     }}
+        
+       
+
+        
+        
+        
