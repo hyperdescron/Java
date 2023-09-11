@@ -94,7 +94,21 @@ public class ArrayDS {
         }
         System.out.println("Maximum number : "+temp3);
 
+        // Finding a number in an array
+        // Order of elements doesn't matter
+        int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+        int key = 5;
+        for (int i=0;i<numbers.length;i++) {
+            if(key == numbers[i]){
+                System.out.println("Found "+key+" at index "+ i);
+            }
+        }
 
+        // Finding a number in an array another way
+        // For this example array must be sorted first
+        int key2 = 6;
+        System.out.println("Found "+key2+" at index "+Arrays.binarySearch(numbers,key2));
+        
         
     
     }}
