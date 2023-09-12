@@ -1,3 +1,4 @@
+package DSA;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -61,6 +62,7 @@ public class ArrayListDS {
         // Arraylist type cannot be primitive types example int,double etc..
         // Integer is wrapper class for int data type
         // int[] and Strings are reference data type
+        
 
     }
 
